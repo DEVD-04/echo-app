@@ -1,5 +1,5 @@
 import mongoose from "mongoose"
-import {genSalt,} from "bcrypt"
+import {genSalt,hash} from "bcrypt"
 
 const userSchema = new mongoose.Schema({
     email: {
@@ -33,8 +33,9 @@ const userSchema = new mongoose.Schema({
 // pre is middleware provided by mongodb, 
 // by which we ensure before saving data do encryption function
 userSchema.pre("save", async function (next) {
+    if (!this.isModified("password")) return next();
     const salt= await genSalt();
-    this.password= await (this.password, salt);
+    this.password= await hash(this.password, salt);
     next();
 });
 
