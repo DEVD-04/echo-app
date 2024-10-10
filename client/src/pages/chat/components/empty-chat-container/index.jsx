@@ -13,8 +13,8 @@ const EmptyChatContainer = () => {
             <h3 className="poppins-medium">
                 Hello<span className="text-purple-500">! </span>
                 Welcome to 
-                <span className="text-purple-500"> Echo </span>
-                Chat App
+                <span className="text-purple-500"> Echo... </span>
+                App
             </h3>
         </div>
     </div>
