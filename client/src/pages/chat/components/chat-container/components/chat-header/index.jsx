@@ -32,7 +32,7 @@ const ChatHeader = () => {
 					</div>
 				</div>
 				<div>
-					{selectedChatType === "contact" && `${selectedChatData.firstName} ${selectedChatData.lastName}`}
+					{selectedChatType === "contact" && `${selectedChatData.firstName || " "} ${selectedChatData.lastName}`}
 				</div>
 				<div className="felx gap-5 items-center justify-center">
 					<button className="text-neutral-500 focus:border-none focus:outline-none focus:text-white duration-300 transition-all"

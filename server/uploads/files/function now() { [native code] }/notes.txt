@@ -1,0 +1,11 @@
+Horizontal scaling, also known as "scaling out", can be better than vertical scaling, also known as "scaling up", in several ways, including:
+Cost
+Horizontal scaling is more cost-effective because you only pay for what you use, and adding more machines is predictable. In contrast, upgrading to a larger machine may have increasing costs for smaller gains in performance.
+Scalability
+Horizontal scaling is infinitely scalable because you can always add another machine, even if you're already using the largest machine available. It's also easier to manage hardware capacity limits and resize the system as needed.
+Performance
+Horizontal scaling can improve system performance and reliability by distributing workload across multiple servers or nodes, which reduces the burden on individual machines and prevents bottlenecks. It can also allow for more endpoints for connections, which can improve network traffic management.
+Fault tolerance
+Horizontal scaling improves fault tolerance and system resilience by distributing workload across multiple servers. If one machine fails or goes offline, the system can still function properly using the remaining machines.
+Availability
+Horizontal scaling can reduce downtime and increase high availability because the system remains available and operational even if one or more machines fail.
